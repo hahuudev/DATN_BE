@@ -28,5 +28,5 @@ app.use(morgan("tiny"));
 router(app);
 // database config
 connectDB();
-
+app.listen(process.env.PORT || 3000, () => {});
 export const viteNodeApp = app;
